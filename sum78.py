@@ -7,9 +7,18 @@
 # sum78([1, 1, 7, 8, 2]) → 4
 
 def sum78(nums):
-  pass
+    total_sum = 0
+    in_section = False
 
+    for num in nums:
+        if num == 7:
+            in_section = True
+        elif num == 8 and in_section == True:
+            in_section = False
 
+        elif in_section == False:
+            total_sum += num
+    return total_sum
 
 
 

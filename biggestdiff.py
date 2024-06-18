@@ -6,7 +6,26 @@
 # biggest_diff([2, 10, 7, 2]) → 8
 
 def biggest_diff(nums):
-  pass
+
+# if len nums arrar is 0
+
+# if there no val in the nums arr return 0
+
+# find max val max func store in val
+
+# find min val min func store in var
+
+# find the diff between the max and min values
+
+# return the diff
+  if not len(nums):
+    return 0
+
+  max_val = max(nums)
+  min_val = min(nums)
+
+  diff = max_val - min_val
+  return diff
 
 
 # Step 1: Check if List is Not Empty

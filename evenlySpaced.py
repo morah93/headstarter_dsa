@@ -9,3 +9,22 @@ def evenlySpaced(a, b, c):
   pass
 
 
+# Step 1: Sort the Numbers
+# Inside the evenlySpaced function, use the sorted function to sort the input numbers a, b, and c in ascending order.
+# The sorted list will help us easily identify which numbers are small, medium, and large.
+
+# Step 2: Calculate First Difference
+# After sorting the numbers, calculate the difference between the first and second numbers in the sorted list.
+# This difference, which we'll call diff1, represents the difference between the small and medium numbers.
+
+# Step 3: Calculate Second Difference
+# Next, calculate the difference between the second and third numbers in the sorted list.
+# This difference, which we'll call diff2, represents the difference between the medium and large numbers.
+
+# Step 4: Compare the Differences
+# Compare diff1 and diff2.   If they are equal, it means the numbers are evenly spaced.
+# If they are not equal, the numbers are not evenly spaced.
+
+# Step 5: Return the Result
+# Return the result of the comparison. Specifically, if diff1 == diff2, return True; otherwise, return False.
+# This completes the function's logic.

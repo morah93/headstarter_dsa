@@ -6,7 +6,13 @@
 # evenlySpaced(4, 6, 3) → false
 
 def evenlySpaced(a, b, c):
-  pass
+  val = (a, b, c)
+  x = sorted(val)
+  diff1 = x[0] - x[1]
+  diff2 = x[1] - x[2]
+  if diff1 == diff2:
+    return True
+  else: return False
 
 
 # Step 1: Sort the Numbers

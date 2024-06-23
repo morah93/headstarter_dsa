@@ -8,8 +8,8 @@
 def evenlySpaced(a, b, c):
   val = (a, b, c)
   x = sorted(val)
-  diff1 = x[0] - x[1]
-  diff2 = x[1] - x[2]
+  diff1 = x[1] - x[0]
+  diff2 = x[2] - x[1]
   if diff1 == diff2:
     return True
   else: return False

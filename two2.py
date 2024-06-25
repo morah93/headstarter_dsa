@@ -5,7 +5,12 @@
 # two2([0]) → [0]
 
 def two2(nums):
-  pass
+  result = []
+  for num in nums:
+      doubled = num * 2
+      if doubled % 10 != 2:
+          result.append(doubled)
+  return result
 
 
 # Step 1: Initialize an Empty List

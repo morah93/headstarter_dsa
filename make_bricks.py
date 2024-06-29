@@ -7,9 +7,8 @@
 # make_bricks(3, 2, 10) → True
 
 def make_bricks(small, big, goal):
-  max_big_bricks = goal // 5
+  max_big_bricks = min(big, goal // 5)
   remaining_goal = goal - (max_big_bricks * 5)
-  print(remaining_goal)
   if remaining_goal <= small:
     return True
   return False

@@ -6,7 +6,16 @@
 # make_chocolate(4, 1, 7) → 2
 
 def make_chocolate(small, big, goal):
-  pass
+  maxBars = goal // 5
+  bigBarsUsed = min(maxBars, big)
+  remaining = goal - (bigBarsUsed * 5)
+  if remaining <= small:
+    return remaining
+  return -1
+
+make_chocolate(4, 1, 9) #→ 4
+make_chocolate(4, 1, 10) #→ -1
+make_chocolate(4, 1, 7) #→ 2
 
 # Step 1: Calculate Maximum Big Bars
 # Inside the make_chocolate function, calculate the maximum number of big bars that can be used without exceeding the goal.

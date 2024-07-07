@@ -6,8 +6,7 @@
 # make_chocolate(4, 1, 7) → 2
 
 def make_chocolate(small, big, goal):
-  maxBars = goal // 5
-  bigBarsUsed = min(maxBars, big)
+  bigBarsUsed = min(goal // 5, big)
   remaining = goal - (bigBarsUsed * 5)
   if remaining <= small:
     return remaining

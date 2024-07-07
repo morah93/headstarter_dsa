@@ -6,8 +6,11 @@
 # splitArray([5, 2, 3]) → true
 
 def splitArray(nums):
-  pass
-
+  def split_array_helper(nums, i , sum1, sum2):
+    if i == len(nums):
+      return sum1 == sum2
+    return split_array_helper(nums, i + 1, sum1 + nums[i], sum2) or split_array_helper(nums, i + 1, sum1, sum2 + nums[i])
+  return split_array_helper(nums, 0, 0, 0)
 
 # Step 1: Define the Helper Function
 # Inside the splitArray function, define a helper function named splitArrayHelper. This function will handle the recursive process of dividing the array into two groups.

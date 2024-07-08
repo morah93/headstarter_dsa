@@ -5,7 +5,13 @@
 # groupNoAdj(0, [2, 5, 10, 4], 7) → false
 
 def groupNoAdj(start, nums, target):
-  pass
+    if target == 0:
+        return True
+    if start >= len(nums):
+        return False
+    if groupNoAdj(start + 2, nums, target - nums[start]) or groupNoAdj(start + 1, nums, target):
+        return True
+    else: return False
 
 
 

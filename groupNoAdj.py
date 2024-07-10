@@ -11,7 +11,7 @@ def groupNoAdj(start, nums, target):
         return False
     if groupNoAdj(start + 2, nums, target - nums[start]) or groupNoAdj(start + 1, nums, target):
         return True
-    else: return False
+    return False
 
 
 

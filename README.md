@@ -1,1 +1,4 @@
 # headstarter_dsa
+
+open route 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
+gemini AIzaSyCHfB20u4tn4ldsMEQbjhG7IygTcn7RvVQ
